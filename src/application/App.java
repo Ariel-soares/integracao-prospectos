@@ -84,29 +84,8 @@ public class App {
 			System.out.println(response.statusCode());
 			System.out.println(response.headers());
 			System.out.println(response.version());
-
+			
 		}
-
-		/*
-		 * HttpRequest request = HttpRequest.newBuilder()
-		 * .POST(BodyPublishers.ofString()
-		 * .uri(URI.create(
-		 * )) .header("Content-Type", "application/json") .header("Authorization",
-		 * "
-                 * ) .build();
-		 * 
-		 * HttpClient httpClient =
-		 * HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(3))
-		 * .followRedirects(Redirect.NORMAL).build();
-		 * 
-		 * HttpResponse<String> response = httpClient.send(request,
-		 * BodyHandlers.ofString());
-		 * 
-		 * System.out.println(response.body());
-		 * System.out.println(response.statusCode());
-		 * System.out.println(response.headers());
-		 * System.out.println(response.version());
-		 */
 		sc.close();
 	}
 }
