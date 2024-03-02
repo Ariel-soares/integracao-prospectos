@@ -41,7 +41,7 @@ public class App {
 		String endereco = sc.next();
 		
 		
-
+//Leitura de arquivo de texto para colher prospectos
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 
 			String line = br.readLine();
